@@ -9,5 +9,5 @@ import { switchMap } from 'rxjs/operators';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'angular-routing-app';
+  title = 'angular.routing.app';
 }
