@@ -1,5 +1,9 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router'; // CLI imports router
+import {FirstComponent} from './first/first.component';
+import {SecondComponent} from './second/second.component';
+import {PageNotFoundComponent} from './page-not-found/page-not-found.component';
+import {AppComponent} from './app.component';
 
 const routes: Routes = [
   { path: 'first-component', component: FirstComponent },
@@ -10,7 +14,11 @@ const routes: Routes = [
 
 // configures NgModule imports and exports
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  declarations: [
+    AppComponent,
+    PageNotFoundComponent,
+    FirstComponent,
+    SecondComponent,
+  ]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
